@@ -1,42 +1,66 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+<html lang="ru"> 
+<head> 
+	<meta charset="utf-8" />
+	<title>Elms Family (03.09.2011)</title>
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
 
-    <title>Elms.pro</title>
-  </head>
+		body {
+			background: url('elms.jpg') no-repeat;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+		}
 
-  <body>
+		#box {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		}
 
-    <header>
-      <div class="container">
-        <h1>Elms.pro</h1>
-        <h2>elms.pro</h2>
-      </div>
-    </header>
+		#marina {
+			width: 35%;
+			height: 100%;
+			cursor: pointer;
+			float: left;
+		}
 
-    <div class="container">
-      <section id="main_content">
-        <h1>
-<p><a href="http://paul.elms.pro">Paul Elms</a><br /><a href="http://marina.elms.pro">Marina Elms</a></p>
-      </section>
-    </div>
+		#paul {
+			width: 35%;
+			height: 100%;
+			cursor: pointer;
+			float: right;
+		}
 
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-26665213-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+		#divider {
+			cursor: default;
+			width: 30%;
+			height: 100%;
+			float: left;
+		}
+	</style>
 
-  </body>
+	<script>
+		function toMarina () {
+			document.location.href = 'http://marina.elms.pro';
+		};
+		function toPaul () {
+			document.location.href = 'http://paul.elms.pro';
+		};
+	</script>
+</head>
+
+<body>
+	<div id="box">
+		<div id="marina" onclick="toMarina()"></div>
+		<div id="divider"></div>
+		<div id="paul" onclick="toPaul()"></div>
+		<div style="clear: both"></div>
+	</div>
+</body>
 </html>
